@@ -1,0 +1,43 @@
+{
+  "name": "@howaboua/pi-glm-via-anthropic",
+  "version": "0.1.0",
+  "description": "Use Z.ai GLM models in pi through Z.ai's Anthropic-compatible endpoint.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorWarzocha/pi-glm-via-anthropic.git"
+  },
+  "homepage": "https://github.com/IgorWarzocha/pi-glm-via-anthropic#readme",
+  "bugs": {
+    "url": "https://github.com/IgorWarzocha/pi-glm-via-anthropic/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "zai",
+    "z.ai",
+    "glm",
+    "anthropic"
+  ],
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "pack:check": "npm pack --dry-run"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
