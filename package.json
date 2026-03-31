@@ -1,6 +1,6 @@
 {
   "name": "@howaboua/pi-glm-via-anthropic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use Z.ai GLM models in pi through Z.ai's Anthropic-compatible endpoint.",
   "type": "module",
   "license": "MIT",
