@@ -6,9 +6,13 @@ It overrides pi's built-in `zai` provider to send requests to `https://api.z.ai/
 
 ## Why
 
-Some pi users prefer Z.ai's Anthropic-compatible endpoint because it often feels faster, lower-latency, and less buggy than the default Z.ai coding endpoint.
+This package exists because many GLM Coding Plan users prefer Z.ai's Anthropic-compatible route over the default coding endpoint.
 
-This is based on user experience, not a guarantee.
+Why:
+
+- Z.ai officially exposes an Anthropic-compatible endpoint for coding tools.
+- Z.ai's Claude Code docs describe that setup around "Code faster" and "rock-solid reliability".
+- Community reports and benchmarks commonly describe the Anthropic route as faster, lower-latency, or less flaky than the default coding endpoint.
 
 ## What it does
 
@@ -77,5 +81,8 @@ export ZAI_ANTHROPIC_BASE_URL=https://your-proxy.example.com
 
 ## References
 
+- Z.ai Claude Code guide: https://docs.z.ai/devpack/tool/claude
 - Z.ai third-party tool guide: https://docs.z.ai/guides/development/using-glm-api-with-third-party-tools
+- Roo Code issue discussing faster results via `https://api.z.ai/api/anthropic`: https://github.com/RooCodeInc/Roo-Code/issues/8488
+- Community discussion: https://www.reddit.com/r/ZaiGLM/comments/1rti3cy/psa_for_legacy_users_with_no_active_sub/
 - pi package docs: https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/packages.md
