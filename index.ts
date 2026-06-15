@@ -52,7 +52,7 @@ export const MODELS = [
 export default function (pi: ExtensionAPI) {
 	pi.registerProvider("zai", {
 		baseUrl: process.env.ZAI_ANTHROPIC_BASE_URL || DEFAULT_BASE_URL,
-		apiKey: "ZAI_API_KEY",
+		apiKey: "$ZAI_API_KEY",
 		api: "anthropic-messages",
 		models: MODELS.map((model) => ({ ...model })),
 	});
